@@ -1,0 +1,80 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 500px;
+}
+
+.aside {
+  /* background-color: red; */
+  height: 100%;
+  width: 300px;
+  padding: 40px 0;
+  position: fixed;
+  float: left;
+  background: #f2f3f7;
+  overflow-y: scroll;
+}
+.main_content {
+  min-height: 500px;
+  float: right;
+  width: calc(100% - 300px);
+  background-color: hsl(225, 9%, 25%);
+}
+
+.img_profile {
+  background: url("img/profile.jpg");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+  margin: auto;
+}
+.name {
+  font-family: "Playfair Display", serif;
+}
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 0;
+}
+.menu li {
+  padding-top: 15px;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
+}
+
+.inactive:after {
+  display: block;
+  content: "";
+  padding-top: 7px;
+  border-bottom: solid 1px #2c98f0;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.active:after {
+  display: block;
+  content: "";
+  padding-top: 7px;
+  border-bottom: solid 1px #2c98f0;
+  transition: transform 250ms ease-in-out;
+}
+
+.inactive:hover:after {
+  transform: scaleX(1);
+}
+
+.profession {
+  color: #2c98f0;
+}
+.active a {
+  color: #2c98f0;
+}
+
+.social li a:hover {
+  color: #2c98f0;
+}
