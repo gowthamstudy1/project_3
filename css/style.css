@@ -1,7 +1,6 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
-  min-height: 500px;
 }
 
 .aside {
@@ -24,7 +23,6 @@
   padding: 0 !important;
 }
 .main_content {
-  min-height: 500px;
   float: right;
   width: calc(100% - 300px);
   padding: 0;
