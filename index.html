@@ -183,10 +183,11 @@
 
       function myFunction(x) {
         x.classList.toggle("change");
-        document.querySelector("#aside").style.transform = "translateX(0px)";
-        document.querySelector("#main_content").style.width =
-          "calc(100% - 300px)";
-        document.querySelector("#main_content").style.padding = 0;
+        document.querySelector("#aside").classList.toggle("aside_grow");
+
+        document
+          .querySelector("#main_content")
+          .classList.toggle("main_content_shrink");
       }
     </script>
   </body>
